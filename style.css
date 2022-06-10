@@ -23,6 +23,10 @@
     font-family:'Ubuntu', sans-serif;
     background-color: crimson;
 }
+.navbar:hover{
+    background-color: red;
+
+}
 .navbar .menu li a{
     color: #FFF;
     font-size: 18px;
@@ -49,14 +53,12 @@
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a:hover{
-    color: yellow;
-}
+
 .navbar .logo span{
     color: black;
 }
 .navbar .logo span:hover{
-    color :white
+    color :yellow;
 }
 .navbar .menu li a:hover{
     color: black;
@@ -68,7 +70,7 @@
     background: url(Images/Banner.png) no-repeat center;
     height: 100vh;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     color: #FFF;
     min-height: 500px;
     font-family:'Ubuntu', sans-serif;
@@ -92,12 +94,17 @@
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: red;
+    color: crimson;
     font-weight: 700;
+}
+.home .home-content .text-3 span:hover{
+    color: red;
+    cursor: pointer;
 }
 
 
-button{
+.mais button{
+    width: 200px;
     font-size: 27px;
     font-family:'Ubuntu', sans-serif;
     font-weight: 600;
@@ -107,12 +114,13 @@ button{
     color: #FFF;
     border: 2px red solid;
     cursor: pointer;
-    border-radius: 5%
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 crimson;
+    transition: ease-out 0.3s;
 }
 
-button:hover{
-    background-color: crimson;
-    color: whitesmoke;
-    transition: 1s ease;
-    border: 2px whitesmoke solid;
+.mais button:hover{
+    box-shadow: inset 200px 0 0 0 red;
+    color: black;
+    border: 2px black solid;
 }
