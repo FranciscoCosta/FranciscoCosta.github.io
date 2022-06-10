@@ -1,0 +1,45 @@
+
+body{
+    background-color:#000300;
+    text-align: center;
+    color: #FFFEFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+strong, ul , li ,h1 {
+    pointer-events: painted;
+    text-decoration: none;
+    list-style: none;
+    color: #FBFF1F;
+}
+a{
+    text-decoration: none;
+}
+.Texto-base{
+    text-align: center;
+    font-size: 0.9em;
+}
+.classe-titulos{
+    font-size: 1.5em;
+}
+#perfil{
+    background-color: #FFFEFF;
+    margin: 30px 30px;
+    border: 2px #02A9EA solid;
+    border-radius: 5px;
+}
+.Skills{
+    color: #02A9EA;
+    font-weight: 600;
+    letter-spacing:10px;
+    line-height: 40px;
+}
+.Links-Externos{
+    color: #FBFF1F;
+}
+.white{
+    color: #FFFEFF;
+}.foto-perfil{
+    border-radius: 200%;
+}
