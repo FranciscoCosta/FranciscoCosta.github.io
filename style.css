@@ -1,27 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-*{
+/* Inico Estilo Global pagina */
+/* Inico Estilo Global pagina */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;  
+    text-decoration: none;
+    list-style: none;
 }
 
-.max-width{
-    max-width: 1300px;
+/*Fim Estilo Global pagina */
+/*Fim Estilo Global pagina */
+
+
+
+.container{
+    max-width: 1500px;
     padding: 0 80px;
-    margin:auto;
+    margin: auto;
 }
 
-/* Estlio da barra de navegacao */
+/*Inicio Estilo da barra de navegação */
+/*Inicio Estilo da barra de navegação */
+
 
 .navbar{
-    position: fixed;
-    /* background-color: crimson; */
     width: 100%;
-    padding: 30px 0;
+    position: fixed;
+    padding: 10px 0;
     font-family:'Ubuntu', sans-serif;
     background-color: crimson;
+
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 .navbar:hover{
     background-color: red;
@@ -29,25 +46,15 @@
 }
 .navbar .menu li a{
     color: #FFF;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 30px;
     transition: color 0.3s ease;
-
 }
-
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
 .navbar .menu li{
-    list-style: none;
     display: inline-block;
-
 }
+
 .navbar .logo a{
     color: #FFF;
     font-size: 35px;
@@ -57,27 +64,60 @@
 .navbar .logo span{
     color: black;
 }
-.navbar .logo span:hover{
-    color :yellow;
-}
+
 .navbar .menu li a:hover{
     color: black;
 }
 
-/* Estilo secçao casa */
-.home{
+.menu-btn{
+    color: #FFF;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* @media (max-width: 900px) {
+    .container{ 
+        padding: 0 0px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        background-color: black;
+        color: white;relative
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 30px;
+    }
+    .navbar .menu li a:hover{
+        color: crimson;
+    }
+} */
+/*Fim Estilo da barra de navegação */
+/*Fim Estilo da barra de navegação */
+
+/*Inicio Estilo Home */
+/*Inicio Estilo Home */
+
+
+
+.home {
     display: flex;
     background: url(Images/Banner.png) no-repeat center;
-    height: 100vh;
     background-size: cover;
-    /* background-attachment: fixed; */
     color: #FFF;
-    min-height: 500px;
     font-family:'Ubuntu', sans-serif;
+    min-height: 500px;
+    height: 100vh;
 }
-.home .max-width{
+.home .container{
     margin: auto 0 auto 40px;
-    
 }
 
 .home .home-content .text-1{
@@ -90,7 +130,7 @@
 }
 
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 30px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
@@ -101,8 +141,6 @@
     color: red;
     cursor: pointer;
 }
-
-
 .mais button{
     width: 200px;
     font-size: 27px;
@@ -123,4 +161,90 @@
     box-shadow: inset 200px 0 0 0 red;
     color: black;
     border: 2px black solid;
+} 
+
+/* Estilo da seccao sobre mim */
+.about{
+    font-family: 'Poppins',sans-serif;
+    padding-top: 100px;
 }
+
+.about__title{
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 90px;
+    max-width: 600px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    margin-left: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: red;
+    border-bottom: 10px black solid;
+    border-radius: 8px;
+
+}
+.about-content{
+    display: flex;
+    gap:2rem;
+}
+
+.about-content .collum__right{
+    font-size: 45px;
+    min-width: 200px;
+}
+.collum__left img{
+    width: 700px;
+}
+.container{
+    margin: 40px auto;
+    line-height: 55px;
+}
+.link-text {
+    color: crimson;
+    font-weight: 600;
+    text-align: start;
+}
+.link-text:hover {
+    color: red;
+    font-weight: 700;
+}
+
+.project{
+    margin: 0px 0 70px 0;
+    background-color: rebeccapurple;
+}
+
+
+.project__title{
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 90px;
+    max-width: 600px;
+    font-weight: 700;
+    margin: 20px auto;
+    padding-bottom:20px;
+    padding-top: 100px;
+    text-align: center;
+    color: red;
+    border-bottom: 10px black solid;
+    border-radius: 8px;
+}
+
+.project .container{
+display: inline block;
+
+}
+
+.project .container img{
+    width: 400px;
+    margin: 5px 5px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.project .container img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+    transition-duration:0.5s;
+}
+

@@ -5,24 +5,36 @@
         <meta name="viewport" content="width-device-width, initial-scale1.0">
         <title>Porfolio Francisco Costa</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/952f793196.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
+
+<!-- Barra de navegação inicio -->
+
+    <section class="navbar__section">    
         <nav class="navbar">
-            <div class="max-width">
+            <div class="container">
                 <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
                 <ul class="menu">
-                    <li class="white"><a href="#">Home</a></li>
-                    <li class="white"><a href="#">Sobre mim</a></li>
-                    <li class="white"><a href="#">Skills</a></li>
-                    <li class="white"><a href="#">Projetos</a></li>
-                    <li class="white"><a href="#">Contatos</a></li>
+                    <li class="white"><a href="./index.html">Home</a></li>
+                    <li class="white"><a href="#about">Sobre mim</a></li>
+                    <li class="white"><a href="./Skills.html">Skills</a></li>
+                    <li class="white"><a href="./Projects.html">Projetos</a></li>
+                    <li class="white"><a href="./Contact.html">Contatos</a></li>
                 </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
-    <!-- Home section start  -->
+    </section>    
+
+<!-- Barra de navegação fim -->
+
+<!-- Introdução inicio -->
     <section class="home" id="home">
-        <div class="max-width">
+        <div class="container">
             <div class="home-content">
                 <div class="text-1">Olá o meu nome é</div>
                 <div class="text-2">Francisco Costa</div>
@@ -31,6 +43,49 @@
             </div>
         </div>
     </section>
+<!-- Introdução fim -->
 
+<!-- Sobre mim inicio -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="about__title">Sobre mim</h2>
+        <div class="about-content">
+            <div class="collum__left">
+                <img src="./Images/prof.png" alt="profile picture">
+            </div>
+            <div class="collum__right"> <p>
+                Sou português e estou a viver em Belo Horizonte Minas Gerais desde 2021.
+                Entre 2010 e 2016 fiz faculdade na<a href="https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home" class="url-esc" target="_blank" ><span class="link-text"> Universidade do Porto</span></a> no curso de Engenharia Geográfica.
+                <br> Entre o ano de 2015 
+                e 2016 fiz parte do projeto Erasmus <a href="https://www.ujaen.es/" class="url-esc" target="_blank" ><span class="link-text"> Universidade de Jaen </span></a>  na Espanha.<br> Em 2022 inicei a minha 
+                carreira como Desenvolvedor de Web Full Stack na<a href="https://www.betrybe.com/" class="url-esc" target="_blank" ><span class="link-text"> Escola Trybe</span>.</a> <br>
+            </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!--Projectos parte!-->
+<section class="project">
+    <h2 class="project__title">Projetos</h2>
+    <div class="container">
+            <span><a href="https://courageous-kataifi-9f97e0.netlify.app/"><img src="./Images/x-tudo.png" alt="X-tudo"></span></a>
+            <span><img src="./Images/x-tudo.png" alt="X-tudo"></span>
+            <span><img src="./Images/x-tudo.png" alt="X-tudo"></span>
+            <span><img src="./Images/x-tudo.png" alt="X-tudo"></span>
+            <span><img src="./Images/x-tudo.png" alt="X-tudo"></span>
+            <span><img src="./Images/x-tudo.png" alt="X-tudo"></span>
+            <span><img src="./Images/x-tudo.png" alt="X-tudo"></span>
+            <span><img src="./Images/x-tudo.png" alt="X-tudo"></span>
+    </div>
+</section>
+
+
+
+
+
+    <script src="script.js"></script>
     </body>
 </html>
