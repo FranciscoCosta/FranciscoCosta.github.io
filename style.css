@@ -17,8 +17,7 @@
 
 .container{
     max-width: 1500px;
-    padding: 0 80px;
-    margin: auto;
+    margin: 0 'auto';
 }
 
 /*Inicio Estilo da barra de navegação */
@@ -31,13 +30,15 @@
     font-family:'Ubuntu', sans-serif;
     background-color: crimson;
     z-index: 1;
+    padding: 0;
+
 
 }
 
 .navbar .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 
 }
 .navbar:hover{
@@ -212,7 +213,8 @@
 
 .project{
     margin: 0px 0 70px 0;
-    background: url(./Images/6017213.jpg);
+    background: url(./Images/6017213.jpg) no-repeat center;
+    object-fit: cover;
 }
 
 
@@ -224,20 +226,22 @@
     margin: 20px auto;
     padding-bottom:20px;
     padding-top: 100px;
-    text-align: center;
     color: red;
     border-bottom: 10px black solid;
     border-radius: 8px;
+    text-align: center;
 }
 
-.project .container{
-display: inline block;
+.project .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 
 }
 
 .project .container img{
-    width: 400px;
-    margin: 5px 5px;
+    width: 300px;
     cursor: pointer;
     border-radius: 12px;
 }
@@ -249,6 +253,8 @@ display: inline block;
     transition-duration:2s;
     z-index: -1;
 }
+
+
 
 footer{
     background-color: black;
@@ -292,14 +298,11 @@ footer{
     font-size: 1.4rem;
     font-family: 'Popinns',sans-serif;
     margin-bottom: 0.5rem;
-    color:  #FFF
+    color:  #FFF;
     font-weight: 500;
     line-height: 1.4rem;
 }
 
-.footer__social svg:hover{
-    color: blueviolet
-}
 
 
 .links-txt:hover{
