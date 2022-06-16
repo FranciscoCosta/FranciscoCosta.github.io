@@ -17,8 +17,7 @@
 
 .container{
     max-width: 1500px;
-    padding: 0 80px;
-    margin: auto;
+    margin: 0 'auto';
 }
 
 /*Inicio Estilo da barra de navegação */
@@ -28,16 +27,18 @@
 .navbar{
     width: 100%;
     position: fixed;
-    padding: 10px 0;
     font-family:'Ubuntu', sans-serif;
     background-color: crimson;
+    z-index: 1;
+    padding: 0;
+
 
 }
 
 .navbar .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 
 }
 .navbar:hover{
@@ -191,6 +192,7 @@
 .about-content .collum__right{
     font-size: 45px;
     min-width: 200px;
+    font-weight: 600;
 }
 .collum__left img{
     width: 700px;
@@ -211,7 +213,8 @@
 
 .project{
     margin: 0px 0 70px 0;
-    background-color: rebeccapurple;
+    background: url(./Images/6017213.jpg) no-repeat center;
+    object-fit: cover;
 }
 
 
@@ -223,28 +226,131 @@
     margin: 20px auto;
     padding-bottom:20px;
     padding-top: 100px;
-    text-align: center;
     color: red;
     border-bottom: 10px black solid;
     border-radius: 8px;
+    text-align: center;
 }
 
-.project .container{
-display: inline block;
+.project .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 
 }
 
 .project .container img{
-    width: 400px;
-    margin: 5px 5px;
+    width: 300px;
     cursor: pointer;
     border-radius: 12px;
 }
 
 .project .container img:hover{
-    transform: scale(0.8) rotate(-15deg);
+    transform: scale(0.5) rotate(360deg);
     border-radius: 20px;
     box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
-    transition-duration:0.5s;
+    transition-duration:2s;
+    z-index: -1;
 }
 
+
+
+footer{
+    background-color: black;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}   
+
+.footer__desc{
+    font-size: 1.4rem;
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+.footer__social__title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFF;
+}
+
+
+.footer__social li{
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.footer__text__title {
+    font-family: 'Popinns';
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom : 1rem;
+    color:  #FFF
+}
+.footer__text a{
+    font-size: 1.4rem;
+    font-family: 'Popinns',sans-serif;
+    margin-bottom: 0.5rem;
+    color:  #FFF;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+
+
+.links-txt:hover{
+    color: red;
+}
+
+@media only screen and (min-width: 768px) {
+    }
+    .footer__wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__desc{
+        max-width: 300px;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .footer__social__title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer__text__title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footer__text a{
+        font-family: 'Popinns',sans-serif;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 2.5rem;
+    }
+    .footer__social img{
+        width: 50px;
+        align-items: center;
+    }
+    .footer__social img:hover{
+        background-color:  white;
+    }
+    
+    
+
+.copyright{
+    padding: 1rem 0;
+}
+.copyright__text {
+    font-family: 'Popinns',sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
